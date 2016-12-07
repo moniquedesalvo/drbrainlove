@@ -1,0 +1,149 @@
+body {
+	margin: 0;
+	background-image: url("images/playatexture.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color: #ccc;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	padding-top: 20px;
+	padding-left: 20px;
+	height: 85px;
+	width: 100%;
+	background-color: black;
+	color: #ccc;
+	position: fixed;
+	display: flex;
+}
+
+header span {
+	padding: 10px;
+}
+
+header #brainlove {
+	font-size: 3em;
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 0;
+}
+
+header img {
+	height: 70px;
+}
+
+#menu {
+	text-align: right;
+	flex-grow: 1;
+	padding-top: 40px;
+	padding-right: 30px;
+	font-size: 1.25em;
+
+}
+
+
+#menu span:hover {
+	/*color: #4bd5f2;*/
+	color: #0081fd;
+	cursor: pointer;
+}
+
+#slides img {
+	width: 100%;
+}
+
+#about-us {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: auto;
+	width: 75%;
+	display: flex;
+
+}
+
+#about-us iframe {
+	margin-top: 20px;
+	width: 80%;
+	padding-right: 50px;
+}
+
+#about-us p {
+	width: 50%;
+}
+
+a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	color: #0081fd;
+}
+
+footer {
+	text-align: center;
+	padding-top: 65px;
+	height: 85px;
+	background-color: black;
+}
+
+.fa {
+	color: #ccc;
+}
+
+.fa:hover {
+	color: #0081fd;
+	cursor: pointer;
+}
+
+#get-involved {
+	height: 500px;
+	background-color: black;
+	color: #ccc;
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+}
+
+#get-involved h2 {
+	color: #ff00f4;
+	/*text-align: center;*/
+}
+
+#press {
+	height: 500px;
+}
+
+#gallery {
+	height: 500px;
+	background-color: black;
+	color: #ccc;
+}
+
+#get-involved #donate {
+	width: 30%;
+	margin: auto;
+}
+
+#get-involved #donate #pay-logos {
+}
+
+#get-involved #donate #pay-logos img {
+	height: 40px;
+	padding-right: 10px;
+
+}
+
+#get-involved #mailing-list-collaborate {
+	width: 20%;
+	margin: auto;
+}
+
+#get-involved #mailing-list-collaborate #mailing-list {
+	margin-bottom: 100px;
+}
