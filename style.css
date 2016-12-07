@@ -17,6 +17,7 @@ header {
 	background-color: black;
 	color: #ccc;
 	position: fixed;
+	z-index: 2;
 	display: flex;
 }
 
@@ -54,22 +55,28 @@ header img {
 	width: 100%;
 }
 
-#about-us {
+#about-us-container {
+	position: relative;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	margin: auto;
 	width: 75%;
 	display: flex;
-
 }
 
-#about-us iframe {
+#about-us {
+	position: absolute;
+	top: -60px;
+	left: 0px;
+}
+
+#about-us-container iframe {
 	margin-top: 20px;
 	width: 80%;
 	padding-right: 50px;
 }
 
-#about-us p {
+#about-us-container p {
 	width: 50%;
 }
 
