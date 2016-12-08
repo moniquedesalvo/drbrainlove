@@ -7,6 +7,7 @@ body {
     background-size: cover;
 	background-color: #ccc;
 	font-family: 'Open Sans', sans-serif;
+	min-width: 1400px;
 }
 
 header {
@@ -19,6 +20,7 @@ header {
 	position: fixed;
 	z-index: 2;
 	display: flex;
+	min-width: 1400px;
 }
 
 header span {
@@ -41,12 +43,10 @@ header img {
 	padding-top: 40px;
 	padding-right: 30px;
 	font-size: 1.25em;
-
 }
 
 
 #menu span:hover {
-	/*color: #4bd5f2;*/
 	color: #0081fd;
 	cursor: pointer;
 }
@@ -119,7 +119,6 @@ footer {
 
 #get-involved h2 {
 	color: #ff00f4;
-	/*text-align: center;*/
 }
 
 #press {
@@ -138,12 +137,16 @@ footer {
 }
 
 #get-involved #donate #pay-logos {
+	display: flex;
 }
 
 #get-involved #donate #pay-logos img {
 	height: 40px;
 	padding-right: 10px;
+}
 
+#get-involved #donate #pay-logos input {
+	height: 40px;
 }
 
 #get-involved #mailing-list-collaborate {

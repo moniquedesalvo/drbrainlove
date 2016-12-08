@@ -53,7 +53,17 @@
 				</p>
 				<div id="pay-logos">
 					<a href="http://www.payit2.com/collect-page/56625"><img src="images/payitsquare2.png"></a>
-					<a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=e5Oi00NGp3XJ-nJEJ7sKYA_pvx1MJvnVAl_7_ivvbE1qUubVcrWDkLTqYGe&dispatch=5885d80a13c0db1f8e263663d3faee8d333dc9aadeed3fe0b5b299d55fd35542"><img src="images/paypal-logo.jpg"></a>
+				
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_donations">
+						<input type="hidden" name="business" value="donate@drbrainlove.org">
+						<input type="hidden" name="lc" value="US">
+						<input type="hidden" name="item_name" value="Dr. Brainlove">
+						<input type="hidden" name="no_note" value="0">
+						<input type="hidden" name="currency_code" value="USD">
+						<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+						<input type="image" src="images/paypal-logo.jpg"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+					</form>
 				</div>
 		</div>
 		<div id="mailing-list-collaborate">
