@@ -1,3 +1,10 @@
+html,body {
+    width: 100%;
+	margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
 	margin: 0;
 	background-image: url("images/playatexture.jpg");
@@ -7,77 +14,6 @@ body {
     background-size: cover;
 	background-color: #ccc;
 	font-family: 'Open Sans', sans-serif;
-	min-width: 1400px;
-}
-
-header {
-	padding-top: 20px;
-	padding-left: 20px;
-	height: 85px;
-	width: 100%;
-	background-color: black;
-	color: #ccc;
-	position: fixed;
-	z-index: 2;
-	display: flex;
-	min-width: 1400px;
-}
-
-header span {
-	padding: 10px;
-}
-
-header #brainlove {
-	font-size: 3em;
-	font-family: 'Roboto', sans-serif;
-	padding-bottom: 0;
-}
-
-header img {
-	height: 70px;
-}
-
-#menu {
-	text-align: right;
-	flex-grow: 1;
-	padding-top: 40px;
-	padding-right: 30px;
-	font-size: 1.25em;
-}
-
-
-#menu span:hover {
-	color: #0081fd;
-	cursor: pointer;
-}
-
-#slides img {
-	width: 100%;
-}
-
-#about-us-container {
-	position: relative;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	margin: auto;
-	width: 75%;
-	display: flex;
-}
-
-#about-us {
-	position: absolute;
-	top: -60px;
-	left: 0px;
-}
-
-#about-us-container iframe {
-	margin-top: 20px;
-	width: 80%;
-	padding-right: 50px;
-}
-
-#about-us-container p {
-	width: 50%;
 }
 
 a {
@@ -90,6 +26,151 @@ a:hover {
 	text-decoration: none;
 	color: #0081fd;
 }
+
+/* ========================================================
+Header
+=========================================================== */
+
+header {
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 100%;
+	background-color: black;
+	color: #ccc;
+	position: fixed;
+	z-index: 1;
+	display: flex;
+	height: 100px;
+}
+
+header span {
+	padding: 10px;
+}
+
+header img {
+	height: 50px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-right: 25px;
+	padding-left: 55px;
+}
+
+header #brainlove {
+	font-size: 3em;
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 0;
+}
+
+#menu {
+	text-align: right;
+	flex-grow: 1;
+	padding-top: 30px;
+	padding-right: 60px;
+	font-size: 1.25em;
+}
+
+#menu span:hover {
+	color: #0081fd;
+	cursor: pointer;
+}
+
+/* ========================================================
+Hero Image
+=========================================================== */
+
+#hero {
+	padding-top: 100px;
+}
+
+#hero img {
+	width: 100%;
+}
+
+/* ========================================================
+About Us
+=========================================================== */
+
+#about-us-container {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: auto;
+	width: 75%;
+	display: flex;
+}
+
+#about-us-container iframe {
+	margin-top: 20px;
+	width: 60%;
+	padding-right: 50px;
+}
+
+#about-us-container p {
+	width: 40%;
+}
+
+#about-us {
+	position: absolute;
+	top: -100px;
+	left: 0px;
+}
+
+/* ========================================================
+Get Involved
+=========================================================== */
+
+#get-involved-container {
+	background-color: black;
+	color: #ccc;
+	display: flex;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	width: 75%;
+	margin: auto;
+	position: relative;
+}
+
+#get-involved-container h2 {
+	color: #ff00f4;
+}
+
+#donate {
+	width: 60%;
+	margin: auto;
+	padding-right: 50px;
+}
+
+#pay-logos {
+	display: flex;
+}
+
+#pay-logos img {
+	height: 40px;
+	padding-right: 10px;
+}
+
+#pay-logos input {
+	height: 40px;
+}
+
+#mailing-list-collaborate {
+	width: 40%;
+	margin: auto;
+}
+
+#mailing-list {
+	margin-bottom: 100px;
+}
+
+#get-involved {
+	position: absolute;
+	top: -100px;
+	left: 0px;
+}
+
+/* ========================================================
+Footer
+=========================================================== */
 
 footer {
 	text-align: center;
@@ -107,53 +188,38 @@ footer {
 	cursor: pointer;
 }
 
-#get-involved {
-	height: 500px;
-	background-color: black;
-	color: #ccc;
-	display: flex;
-	padding-top: 50px;
-	padding-bottom: 50px;
+/* ========================================================
+Media Queries
+=========================================================== */
 
-}
+@media screen and (max-width: 1000px) {
+	header {
+		display: block;
+		margin-bottom: 20px;
+		height: 189px;
+	}
 
-#get-involved h2 {
-	color: #ff00f4;
-}
+	header #menu {
+		text-align: left;
+		margin-bottom: 20px;
+	}
 
-#press {
-	height: 500px;
-}
+	#hero {
+		padding-top: 189px;
+	}
 
-#gallery {
-	height: 500px;
-	background-color: black;
-	color: #ccc;
-}
+	#about-us-container {
+		display: block;
+		width: 100%;
+	}
 
-#get-involved #donate {
-	width: 30%;
-	margin: auto;
-}
+	#about-us-container iframe {
+		width: 100%;
+	}
 
-#get-involved #donate #pay-logos {
-	display: flex;
-}
+	#about-us-container p {
+		width: 95%;
+		margin: 2%;
+	}
 
-#get-involved #donate #pay-logos img {
-	height: 40px;
-	padding-right: 10px;
-}
-
-#get-involved #donate #pay-logos input {
-	height: 40px;
-}
-
-#get-involved #mailing-list-collaborate {
-	width: 20%;
-	margin: auto;
-}
-
-#get-involved #mailing-list-collaborate #mailing-list {
-	margin-bottom: 100px;
 }
