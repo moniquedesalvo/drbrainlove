@@ -2,24 +2,40 @@
 <html>
 	<head>
 		<title>Dr. Brainlove</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 		<script src="https://use.fontawesome.com/30e4653c78.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<header>
-			<img src="images/brainlove_logo_two_colors.png" alt="Dr. Brainlove logo"> 
-			<span id="brainlove">Dr. Brainlove</span>
-			<div id="menu">
+			<a href="index.html">
+				<img src="images/brainlove_logo_two_colors.png" alt="Dr. Brainlove logo">
+			</a>
+			<a href="index.html">
+				<span id="brainlove">Dr. Brainlove</span>
+			</a>
+			<div class="mobile-menu-wrapper">
+
+				<i id="hamburger" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+				<i id="close" class="fa fa-times fa-2x" aria-hidden="true"></i>
+				<div class="mobile-menu">
+					<span><a href="#about-us">About Us</a></span>
+					<span><a href="#get-involved">Get Involved</a></span>
+					<!-- <span>Press</span>
+					<span>Gallery</span> -->
+					<span><a href="http://drbrainlove.tumblr.com/">Blog</a></span>
+					<span><a href="https://thephage.org/">The Phage</a></span>
+				</div>
+			</div>
+			<div class="menu">
 				<span><a href="#about-us">About Us</a></span>
 				<span><a href="#get-involved">Get Involved</a></span>
 				<!-- <span>Press</span>
 				<span>Gallery</span> -->
 				<span><a href="http://drbrainlove.tumblr.com/">Blog</a></span>
 				<span><a href="https://thephage.org/">The Phage</a></span>
-
 			</div>
 		</header>
 		<div id="hero">
@@ -29,7 +45,7 @@
 			<div class="column-container">
 				<div id="about-us"></div>
 				<div id="video">
-					<div id="iframe-container" class="iframe-container-16x9" >
+					<div id="iframe-container" class="iframe-container-16x9">
 						<iframe src="https://player.vimeo.com/video/120101518?byline=0&portrait=0" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -118,5 +134,7 @@
 			<a href="http://drbrainlove.tumblr.com/"><i class="fa fa-2x fa-tumblr-square" aria-hidden="true"></i></a>
 
 		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
