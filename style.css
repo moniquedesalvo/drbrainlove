@@ -212,7 +212,31 @@ footer a {
 	cursor: pointer;
 }
 
+/* ========================================================
+Press
+=========================================================== */
 
+#press-container {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#press-container img {
+	padding: 10px;
+}
+
+#press-container img:hover {
+	transform: scale(1.1);
+}
+
+#press {
+	position: relative;
+	top: -80px;
+	left: 0px;
+}
 
 /* ========================================================
 Gallery
@@ -230,7 +254,7 @@ Gallery
 Media Queries
 =========================================================== */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 	header {
 		height: 80px;
  	}
@@ -305,6 +329,16 @@ Media Queries
 
 	#donate, #mailing-list {
 		margin-bottom: 30px;
+	}
+
+	#press-container {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+
+	#press-container img {
+		padding: 20px;
 	}
 
 	#img-gallery-wrapper {
