@@ -29,8 +29,8 @@ a:hover {
 
 .column-container {
 	position: relative;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	margin: auto;
 	width: 75%;
 	display: flex;
@@ -220,12 +220,13 @@ Press
 	width: 80%;
 	margin: auto;
 	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 #press-container img {
-	padding: 10px;
+	padding: 20px;
+	width: 150px;
 }
 
 #press-container img:hover {
@@ -335,10 +336,12 @@ Media Queries
 		width: 100%;
 		margin: auto;
 		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 
 	#press-container img {
-		padding: 20px;
+		padding: 10px;
 	}
 
 	#img-gallery-wrapper {
